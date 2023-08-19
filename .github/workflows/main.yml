@@ -1,0 +1,26 @@
+name: arisaig-test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+   hello:
+     runs-on: ubuntu-latest
+     steps:
+     - uses: actions/checkout@v2
+     - name: hello world
+       run: echo "Hello World"
+       shell: bash
+  
+   goodby:
+     runs-on: ubuntu-latest
+     steps:
+      - name: goodby
+        run: echo "Good By"
+         
+       
